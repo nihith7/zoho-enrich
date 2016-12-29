@@ -1,20 +1,30 @@
 #include<stdio.h>
 int main()
 {
-	int n,a[10],i,temp=0,j;
+	int n,a[10],i,k,j;
 	printf("enter how many elements");
 	scanf("%d",&n);
 	printf("enter the array of elements");
 	for(i=0;i<n;i++)
 	{
 	scanf("%d",&a[i]);
-}
-	temp=a[0];
-	a[0]=a[n-1];
-	a[n-1]=temp;
+        }
 	for(i=0;i<n;i++)
 	{
-		printf("%d",a[i]);
+	for(j=0;j<i;j++)
+	{
+	if(a[i]<a[j])
+	{
+	k=a[i];
+	a[i]=a[j];
+	a[j]=k;
+	}
+	}
+	}
+	printf("array elements are \n");
+	for(i=0;i<n;i++)
+	{
+	printf("%d ",a[i]);
 	}
 	return 0;
-}
+	}
