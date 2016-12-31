@@ -14,20 +14,20 @@ count=0;
 j=0;
 while(str2[j]!='\0')
 {
-	if(str1[i]==str2[j])
-	{
-		count++;
-	}
-	j++;
+if(str1[i]==str2[j])
+{
+	count++;
 }
-	if(count%2 != 0)
-		temp++;
-	if(temp>=2)
-	{	
-		flag=1;
-		break;
-	}
-	i++;
+j++;
+}
+if(count%2 != 0)
+	temp++;
+if(temp>=2)
+{	
+	flag=1;
+	break;
+}
+i++;
 
 }
 if(flag)
@@ -36,7 +36,7 @@ if(flag)
 }	printf("no");
 else
 {
-	printf("");
+	printf("yes it is palindrome");
 }
 return 0;
 }
