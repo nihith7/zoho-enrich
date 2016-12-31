@@ -20,7 +20,5 @@ scanf("%d",&l);
     }
     }
  printf("\n%d",n);
-}
 return 0;
-}
 }
