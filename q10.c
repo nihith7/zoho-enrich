@@ -5,9 +5,9 @@ int a[10][10],i,j,n;
 int c=1;
 printf("entert the matrix dim");
 scanf("%d",&n);
-for(i=1;i<n;i++)
+for(i=0;i<n;i++)
 {
-for(j=1;j<n;j++)
+for(j=0;j<n;j++)
 {
 if(i%2==0)
 {
@@ -16,15 +16,15 @@ c++;
 }
 else
 {
-a[i][n-j]=c;
+a[i][n-(j+1)]=c;
 c++;
 }
 }
 
 }
-for(i=1;i<n;i++)
+for(i=0;i<n;i++)
 {
-for(j=1;j<n;j++)
+for(j=0;j<n;j++)
 {
 printf("\t%d",a[i][j]);
 }
