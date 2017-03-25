@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main
+int main()
 {
 int n,i,a[10],first=0,second=0;;
 printf("Enter no of elements");
